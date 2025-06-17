@@ -1,0 +1,18 @@
+{
+    "name": "xuanwu",
+    "username": "admin",
+    "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+    "cookie_expire_days": 30,
+    "log_clean_days": 7,
+    "task": [
+        {
+            "enable": false,
+            "exec": "dir",
+            "name": "test_cron_task",
+            "times": [
+                "0 */1 * * * *"
+            ],
+            "workdir": ""
+        }
+    ]
+}
