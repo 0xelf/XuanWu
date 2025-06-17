@@ -36,7 +36,7 @@ docker run -d \
 
 ### 二进制程序
 
-下载：[Releases](https://github.com/GitCourser/xuanwu/releases)  
+下载：[Releases](https://github.com/0xelf/xuanwu/releases)  
 提供 Linux（amd64，arm64），Windows（amd64）  
 脚本环境需要自己安装，[python](https://www.python.org/downloads/windows)，[nodejs](https://nodejs.org/zh-cn/download)，或其他脚本
 
@@ -63,9 +63,9 @@ docker run -d \
     "log_clean_days": 7,
     "task": [
         {
-            "enable": true,
+            "enable": false,
             "exec": "dir",
-            "name": "test_task_1740128994",
+            "name": "test_task",
             "times": [
                 "0 */1 * * * *"
             ],
@@ -77,5 +77,5 @@ docker run -d \
 
 ## 自编译
 
-[前端UI](https://github.com/GitCourser/xuanwu-ui) 构建后将 `dist` 放入后端项目的 `public` 中，也可直接下载构建好的 [Releases](https://github.com/GitCourser/xuanwu-ui/releases)  
+[前端UI](https://github.com/0xelf/xuanwu-ui) 构建后将 `dist` 放入后端项目的 `public` 中，也可直接下载构建好的 [Releases](https://github.com/0xelf/xuanwu-ui/releases)  
 后端用 `go 1.24` 编译

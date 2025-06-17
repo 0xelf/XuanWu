@@ -63,6 +63,9 @@ func (p *ApiData) Init() {
 	routeCron.GET("/enable", cron.HandlerEnableTask)   //启用任务
 	routeCron.GET("/disable", cron.HandlerDisableTask) //禁用任务
 	routeCron.POST("/execute", cron.HandlerExecuteTask) //立即执行任务
+	
+	/* 任务记录 */
+	routeCron.GET("/records", cron.HandlerTaskRecords)
 
 	// 文件管理接口
 	routeFile := routeApi.Group("/file")
